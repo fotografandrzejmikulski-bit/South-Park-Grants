@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neurosteer"
+version = "0.1.0"
+description = "Research prototype for interpretable activation steering in open-weight language models"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Andrzej Mikulski", email = "mojealterego21@gmail.com"}]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
