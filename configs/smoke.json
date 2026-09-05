@@ -1,0 +1,19 @@
+{
+  "name": "activation-steering-smoke",
+  "version": "0.1",
+  "model": {
+    "id": "synthetic",
+    "revision": "local"
+  },
+  "activation": {
+    "dimension": 4,
+    "layer": 0,
+    "source": "synthetic"
+  },
+  "steering": {
+    "method": "add_scaled",
+    "scale": 0.5
+  },
+  "seed": 0,
+  "purpose": "CI smoke test; not a scientific benchmark"
+}
