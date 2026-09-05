@@ -1,0 +1,32 @@
+experiment_id: baseline_sae_v0
+model:
+  family: open-weight
+  identifier: TO_BE_SELECTED
+  checkpoint: TO_BE_SELECTED
+activations:
+  layer: TO_BE_SELECTED
+  source: TO_BE_SELECTED
+sae:
+  input_dim: 0
+  dictionary_size: 0
+  sparsity: topk
+  topk: 32
+training:
+  seed: 0
+  steps: 1000
+  batch_size: 0
+  learning_rate: 0.001
+evaluation:
+  reconstruction_mse: true
+  explained_variance: true
+  l0: true
+  dead_feature_rate: true
+  feature_consistency: true
+  causal_steering: true
+  off_target_capability: true
+  latency: true
+
+audit:
+  record_commit_sha: true
+  record_environment: true
+  record_hardware: true
